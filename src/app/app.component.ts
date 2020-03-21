@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  // styleUrls: ['./app.component.scss'],
+  styles: [`
+    h3 {
+      color: darkblue;
+    }
+  `]
 })
 export class AppComponent {
-  title = 'first-app';
+  @Input() name: string;
 }
